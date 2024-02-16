@@ -2,14 +2,11 @@ import { Autocomplete, TextField } from "@mui/material";
 import { CardCar } from "../../components/CardCar";
 import { Container } from "../../components/Container";
 import { carDatas, carNames } from "../../components/data/CarData";
-import LoopRoundedIcon from '@mui/icons-material/LoopRounded';
-import { useState } from "react";
 
 
 export function Home() {
   const carros = carDatas; //Example to test
   const carName = carNames;
-  const [loading, setLoading] = useState(true);
 
   return (
     

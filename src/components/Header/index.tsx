@@ -5,7 +5,7 @@ import {FiUser, FiLogIn} from 'react-icons/fi'
 
 
 export function Header() {
-    const signed = true;
+    const signed = false;
     const loadingAuth = false;
 
     return (
