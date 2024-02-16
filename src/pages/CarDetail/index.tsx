@@ -1,9 +1,10 @@
+import { useParams } from "react-router-dom";
 
 export function CarDetail() {
-
+  const { name } = useParams();
     return (
       <div>
-       Car Detail
+       {name}
       </div>
     )
   }

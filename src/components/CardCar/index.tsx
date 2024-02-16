@@ -5,11 +5,16 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import carro from '../../assets/150223_WA_Coquetel-de-lancamento-do-novo-BMW-X1-74-1.webp'
 import { ICar } from '../data/CarData';
+import { Link} from 'react-router-dom';
 
 
-export function CardCar({name, year, km, price, city} : ICar){
+export function CardCar({id, name, year, km, price, city} : ICar){
+ 
+  
     return(
-             <Card sx={{ maxWidth: 400 }}>
+      <Link to={'/car/' + id}>
+    
+             <Card sx={{ maxWidth: 400 }} >
         <CardActionArea>
         <CardMedia
           component="img"
@@ -37,5 +42,6 @@ export function CardCar({name, year, km, price, city} : ICar){
         </CardContent>
       </CardActionArea>
     </Card>
+    </Link>
     )
 }
