@@ -12,7 +12,7 @@ export function Home() {
             <input placeholder="Digite o nome do carro" className="w-full rounded-xl border-2 p-2 text-black"/>
             <button className="bg-red-600 px-20 rounded-2xl text-white">Buscar</button>
          </section>
-          <h1 className="font-bold text-center mt-6 text-2xl mb-4">Carros Novos usados em todo Brasil</h1>
+          <h1 className="font-bold text-center mt-6 text-2xl mb-4">Carros novos usados em todo Brasil</h1>
          <div className="grid grid-cols-3 mt-2 gap-5 w-full">
           {carros.map((item) => {
             return(
